@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Slug Anime</title>
+</head>
+
+<body>
+    <header>
+        <div class="mari">
+            <img src="content/Mari.gif" alt="Mari">
+        </div>
+        <h1>Slug Anime and Manga Association</h1>
+        <div class="social-icons">
+            <a href="discord" target="_blank"><img src="content/discord.svg" alt="Discord"></a>
+            <a href="instagram" target="_blank"><img src="content/instagram.svg" alt="Instagram"></a>
+        </div>
+    </header>
+    <div class="content">
+        <div class="cover">
+            <div class="carousel-container">
+                <div class="carousel" id="carousel"></div>
+            </div>
+            <script>
+                const imageFolder = "carousel/";  // Folder where images are stored
+                const imageFiles = ["image1.jpg", "image2.png", "image3.png"]; // List of images
+                const carousel = document.getElementById("carousel");
+
+                // Create image elements and append to carousel
+                imageFiles.forEach((image, index) => {
+                    let img = document.createElement("img");
+                    img.src = imageFolder + image;
+                    if (index === 0) img.classList.add("active"); // First image visible
+                    carousel.appendChild(img);
+                });
+
+                let currentIndex = 0;
+                const images = document.querySelectorAll(".carousel img");
+
+                function nextImage() {
+                    images[currentIndex].classList.remove("active"); // Hide current image
+                    currentIndex = (currentIndex + 1) % images.length; // Move to next image
+                    images[currentIndex].classList.add("active"); // Show next image
+                }
+
+                setInterval(nextImage, 7000); // Change image every 3 seconds
+            </script>
+            <div class="bottom-left">
+                <div class="bottom-left-content">
+                    <p>The Slug Anime and Manga Association (SAMA) at UC Santa Cruz is a community of anime and manga
+                        enthusiasts.</p>
+                    <p>We host screenings, games, and fun events for fans to connect and share their passion.</p>
+                    <a class="discord-link" href="discord" target="_blank">Join Our Discord</a>
+                </div>
+            </div>
+        </div>
+
+        <h2>General Meeting Times</h2>
+        <p><strong>Time:</strong> 3:00 PM - 6:00 PM</p>
+        <p><strong>Day:</strong> Every Sunday During the Quarter</p>
+        <p><strong>Location:</strong> Social Sciences 2 room 159</p>
+
+        <h2>Upcoming Event: Winter Art Festival</h2>
+        <p>Join us for our annual Winter Art Festival, where artists from our club will be showcasing their work! Boba
+            will also be available for sale.</p>
+        <p><strong>Location:</strong> Porter Hitchcock Lounge</p>
+        <p><strong>Day:</strong> March 1, 2025</p>
+        <p><strong>Time:</strong> 1:00 PM - 5:00 PM</p>
+
+        <div class="calendar">
+            <h2>Our Events</h2>
+            <iframe
+                src="https://calendar.google.com/calendar/embed?src=c_c41242c3e02c962dbda4d12d5f7cbe372f0d8ed768c6f99d3ee7aa6aec780d26%40group.calendar.google.com&ctz=America%2FLos_Angeles"
+                style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <img src="content/slugheart.png">
+        </div>
+        <div>
+            <p>Inquiries? Contact <a href="mailto:sluganime@ucsc.edu">sluganime@ucsc.edu</a></p>
+            <p>&copy; 2025 Regents of the University of California</p>
+            <p>The Slug Anime and Manga Association is a 501(c)(3) nonprofit organization (EIN 94-1539563)</p>
+        </div>
+    </footer>
+</body>
+
+</html>
