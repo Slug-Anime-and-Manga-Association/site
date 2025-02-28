@@ -64,12 +64,26 @@
         <p><strong>Day:</strong> Every Sunday During the Quarter</p>
         <p><strong>Location:</strong> Social Sciences 2 room 159</p>
 
-        <h2>Upcoming Event: Winter Art Festival</h2>
-        <p>Join us for our annual Winter Art Festival, where artists from our club will be showcasing their work! Boba
-            will also be available for sale.</p>
-        <p><strong>Location:</strong> Porter Hitchcock Lounge</p>
-        <p><strong>Day:</strong> March 1, 2025</p>
-        <p><strong>Time:</strong> 1:00 PM - 5:00 PM</p>
+        <div id="after">
+            <h2>Upcoming Event: Winter Art Festival</h2>
+            <p>Join us for our annual Winter Art Festival, where artists from our club will be showcasing their work!
+                Boba
+                will also be available for sale.</p>
+            <p><strong>Location:</strong> Porter Hitchcock Lounge</p>
+            <p><strong>Day:</strong> March 1, 2025</p>
+            <p><strong>Time:</strong> 1:00 PM - 5:00 PM</p>
+        </div>
+        <script>
+            function hideDivIfAfter() {
+                const today = new Date();
+                if (today.getMonth() > 2 || (today.getMonth() === 2 && today.getDate() > 1)) {
+                    document.getElementById("after").style.display = "none";
+                }
+            }
+
+            // Run the function when the script loads
+            hideDivIfAfter();
+        </script>
 
         <div class="calendar">
             <h2>Our Events</h2>
