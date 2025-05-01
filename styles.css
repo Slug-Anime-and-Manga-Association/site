@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka');
+:root {
+    --background: #fff0f5;
+    --headerBackground: #fff;
+    --headerText: #000;
+    --text: #333;
+    --contentBackground: rgb(255, 183, 197, 0.8);
+    --accent: #ff69b4;
+    --darkAccent: #ff1493;
+}
 
 body {
     font-family: 'Fredoka', sans-serif;
-    background-color: #fff0f5;
-    color: #333;
+    background-color: var(--background);
+    color: var(--text);
     margin: 0;
     padding: 0;
     background: url("content/cherryblossom.png") no-repeat;
@@ -13,8 +22,8 @@ body {
 }
 
 header {
-    background: #fff;
-    color: black;
+    background: var(--headerBackground);
+    color: var(--headerText);
     height: 15vh;
     min-height: 4em;
     position: relative;
@@ -54,13 +63,13 @@ h1 {
     max-width: 900px;
     margin: 0 auto;
     text-align: left;
-    background-color: rgb(255, 183, 197, 0.8);
+    background-color: var(--contentBackground);
 }
 
 .discord-link {
     display: inline-block;
     padding: 15px 25px;
-    background-color: #ff69b4;
+    background-color: var(--accent);
     color: white;
     text-decoration: none;
     font-size: 1.5em;
@@ -69,7 +78,7 @@ h1 {
 }
 
 .discord-link:hover {
-    background-color: #ff1493;
+    background-color: var(--darkAccent);
 }
 
 .calendar {
@@ -88,7 +97,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--headerBackground);
 }
 
 footer div:first-child {
@@ -186,4 +195,35 @@ a {
 
 .carousel img.active {
     opacity: 1;
+}
+
+a#to-slugcon {
+    z-index: 1000;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    animation: mariShake 5s infinite;
+    img {
+        min-width: 0;
+        width: 250px;
+        height: auto;
+    }
+}
+
+@keyframes mariShake {
+    0% {
+        transform: rotate(0deg);
+    }
+    5% {
+        transform: rotate(5deg);
+    }
+    10% {
+        transform: rotate(-5deg);
+    }
+    15% {
+        transform: rotate(5deg);
+    }
+    25% {
+        transform: rotate(0deg);
+    }
 }

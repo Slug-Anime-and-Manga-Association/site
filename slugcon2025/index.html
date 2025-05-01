@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="../styles.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="artists/artistInfo.js"></script>
+	<title>Slug Anime</title>
+	<meta name="description" content="Slug Anime and Manga Association at UC Santa Cruz">
+</head>
+
+<body>
+	<header>
+		<div class="mari">
+			<img src="../content/Mari.gif" alt="Mari">
+		</div>
+		<div class="title">
+			<h1>Slugcon 2025</h1>
+			<p>brought to you by pixio</p>
+		</div>
+	</header>
+
+	<div class="content">
+		<a href="../index.html" class="back">Back to Home</a>
+		<div id="important">
+			<h2>IMPORTANT IMPORTANT</h2>
+			<h3>Slugcon 2025 will be happening <span class="color">May 11th, 2025</span> from <span class="color">1-7PM</span>
+				at the <span class="color">Merrill Cultural Center</span>.</h3>
+			<h3>Join <a href="tinyurl.com/sluganime" target="_blank">our Discord server</a> for news and updates!!</h3>
+		</div>
+
+		<h2>About Slugcon</h2>
+		<p>SlugCon is UCSC's annual student-run anime convention, brought to you by the Slug Anime and Manga Association!
+			UCSC's nerd culture is showcased through panels, performances, a maid cafe, an artist alley, and more; all made
+			possible with the hard work of our students and student organizations.</p>
+
+		<h2>About SAMA</h2>
+		<p>The Slug Anime and Manga Association (or SAMA) is UCSC’s anime club! We promote the understanding of Japanese
+			popular culture through the medium of anime, manga, games, and other forms of Japanese media. With over 1700
+			members, SAMA strives to create a community where nerd culture can thrive!</p>
+
+		<h2>Sakura Mari & Merch</h2>
+		<p>Inspired by Snow and Sakura Mikus, we held a contest for a seasonal Mari (our mascot) to be the face of SlugCon
+			2025! The winner, who was voted for in-person at a SAMA event, received all merch featuring their design,
+			guaranteed tabling at SlugCon 2025, and a chance to take a life-sized cutout home!</p>
+		<p>This year's winner is <span class="color">remirii</span>!!</p>
+		<img id="sakura-mari" alt="winning sakura mari design" src="assets/remiMari.avif" />
+		<p>We held a SAMA 2025 t-shirt and hoodie design contest for our fundraising efforts! Winners received a merch
+			bundle, including their design!</p>
+		<p>
+			The winning designs are available for purchase at SlugCon! All shirts are $30 each, with hoodies being $50 each.
+		</p>
+		<p>Thank you all for participating.</p>
+		<div id="merch">
+			<div>
+				<label id="frozen-merch">
+					<input type="radio" name="merch" value="frozen" />
+					<img src="assets/merch/frozenTBack.avif" alt="frozen t-shirt design back" />
+					<img src="assets/merch/frozenTFront.avif" alt="frozen t-shirt design front" />
+				</label>
+				<p>Design by Harry! (@fr.o.zen on Discord, @frozen_draws on all social media). $30 each!!</p>
+			</div>
+			<div>
+				<label id="remi-merch">
+					<input type="radio" name="merch" value="remi" />
+					<img src="assets/merch/remiHoodieBack.avif" alt="remirii hoodie design back" />
+					<img src="assets/merch/remiHoodieFront.avif" alt="remirii hoodie design front" />
+				</label>
+				<p>Design by remirii! (@remiriin on Twitter/X! (maybe nsfw be careful)). $50 each!!</p>
+			</div>
+			<div>
+				<label id="tien-merch">
+					<input type="radio" name="merch" value="tien" checked />
+					<img src="assets/merch/tienTBack.avif" alt="avud t-shirt design back" />
+					<img src="assets/merch/tienTFront.avif" alt="avud t-shirt design front" />
+				</label>
+				<p>Design by Tien! (@avud on discord). $30 each!!</p>
+			</div>
+		</div>
+
+		<h2>Artists</h2>
+		<p>We have a LOT of cool artists, here are a few!</p>
+		<a id="artist-gallery" href="./artists/index.html">
+			<div id="artist-sampler">
+				<script DEFER>
+					const sampler = Object.keys(artistInfo);
+					for (let i = 0; i < 4; ++i) {
+						const selected = sampler[Math.floor(Math.random() * sampler.length)];
+						sampler.splice(sampler.indexOf(selected), 1);
+						const img = document.createElement("img");
+						img.src = `artists/artistPfps/${selected}.avif`;
+						document.getElementById("artist-sampler").appendChild(img);
+					}
+				</script>
+			</div>
+			<div class="color">
+				<h2>
+					>> CHECKOUT OUR ARTIST GALLERY
+				</h2>
+			</div>
+		</a>
+
+		<h2>Collaborating Clubs</h2>
+		<p>working on it...</p>
+
+		<h2>Itinerary</h2>
+		<p>Coming Soon...</p>
+
+		<h2>Map</h2>
+		<p>Coming Soon...</p>
+
+		<h2>Sponsors</h2>
+		<p>Thank you to all the sponsors for making this year's event possible.</p>
+	</div>
+
+	<footer>
+		<div>
+			<img src="../content/slugheart.png" alt="Slug Heart">
+		</div>
+		<div>
+			<p>Inquiries? Contact <a href="mailto:sluganime@ucsc.edu">sluganime@ucsc.edu</a></p>
+			<p>&copy; 2025 Regents of the University of California</p>
+			<p>The Slug Anime and Manga Association is a 501(c)(3) nonprofit organization (EIN 94-1539563)</p>
+		</div>
+	</footer>
+</body>
+
+</html>
