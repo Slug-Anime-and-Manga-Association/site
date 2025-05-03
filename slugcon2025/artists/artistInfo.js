@@ -432,5 +432,14 @@ const artistInfo = {
 		socials: {
 			instagram: "https://www.instagram.com/cerulean.sprout?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"
 		}
+	},
+	halberd69: {
+		name: "HALBERD",
+		bio: "hi! i'm hal and i will be tabling at SlugCon! i'm a fourth year AGPM major and i've been making art ever since i can remember. my favorite anime is code geass and i am currently watching soul eater. you can find me on twitter, instagram, and newgrounds @6halberd9.",
+		artworkCount: 2,
+		socials: {
+			instagram: "https://www.instagram.com/6halberd9/",
+			twitter: "https://x.com/6halberd9",
+		}
 	}
 }

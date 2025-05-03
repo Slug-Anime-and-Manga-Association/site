@@ -101,6 +101,7 @@ function openDetailedView(artist) {
 		artistInfo[artist].bio;
 	document.querySelector("#artist-info .pfp").src =
 		`./artistPfps/${artist}.${imageFormat}`;
+	document.querySelector("#artist-info .pfp").alt =	"no pfp :(";
 
 	// clean old divs
 	const p1 = document.querySelector("#artist-info .artworks .panel1");
