@@ -165,4 +165,28 @@ div#collaborating-clubs {
 			margin-bottom: 10px;
 		}
 	}
+
+	div#merch {
+		height: 200px;
+
+		img {
+			min-width: 160px;
+		}
+
+		p {
+			margin-left: 7px !important;
+			font-size: small;
+		}
+		span {
+			display: block;
+		}
+
+		&>div:has(input:checked) label {
+			margin-left: -10px !important;
+		}
+
+		label {
+			margin-left: -65px !important;
+		}
+	}
 }
