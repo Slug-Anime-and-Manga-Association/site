@@ -7,10 +7,19 @@ const clubInfo = {
 			
 			We will discuss the development of GDA's Mock Studio Game "Well Witches" and delve into the different aspects of game development that took place from departments such as art, writing, design, programming, sound, and production!`,
 		socials: {
-			personal: "https://gdacollab.com/",
+			website: "https://gdacollab.com/",
 			discord: "https://discord.com/invite/gNkQJm5X6P",
 			instagram: "https://www.instagram.com/gdacollab/",
 			linkedin: "https://www.linkedin.com/company/ucsc-gda/",
+		},
+	},
+	frl: {
+		name: "Fish Rap Live!",
+		description: "Fish Rap Live! is a satire newspaper which publishes bi-quarterly, reminiscent in style to The Onion. Founded in 1985, Fishrap aims to combine off-beat humor with a critical lens to utilize comedy for both entertainment and political change. Stop by our table to grab a copy of our latest issue and learn more about our club!",
+		socials: {
+			website: "https://fishrap.live/",
+			discord: "https://discord.gg/JJ4E7PwFSh",
+			instagram: "https://www.instagram.com/fishraplive",
 		},
 	},
 	ss: {
@@ -37,13 +46,6 @@ const clubInfo = {
 		name: "Cosplay Club",
 		description: "",
 		socials: {},
-	},
-	frl: {
-		name: "Fish Rap Live!",
-		description: "",
-		socials: {
-			instagram: "https://www.instagram.com/fishraplive",
-		},
 	},
 	srge: {
 		name: "Slug Rhythm Game Enthusiasts",

@@ -93,6 +93,7 @@
 						sampler.splice(sampler.indexOf(selected), 1);
 						const img = document.createElement("img");
 						img.src = `artists/artistPfps/${selected}.avif`;
+						img.alt = artistInfo[selected].name;
 						document.getElementById("artist-sampler").appendChild(img);
 					}
 				</script>
@@ -114,9 +115,11 @@
 				const icon = document.createElement("img");
 				icon.src = `./assets/clubs/${club}.avif`;
 				icon.alt = "no icon :(";
-				const name = document.createElement("h3");
+				const name = document.createElement("h2");
 				name.textContent = clubInfo[club].name;
-				header.append(icon, name);
+				const indicator = document.createElement('h2');
+				indicator.textContent = "V"
+				header.append(icon, name, indicator);
 
 				const info = document.createElement("div");
 				const description = document.createElement("p");
@@ -127,7 +130,7 @@
 					a.href = clubInfo[club].socials[social];
 					a.target = "_blank";
 					const icon = document.createElement("img");
-					if (social == "personal") {
+					if (social == "website") {
 						icon.src = `./assets/clubs/${club}.avif`;
 					} else {
 						icon.src = `./artists/socials/${social}.avif`;
@@ -138,6 +141,17 @@
 				info.append(description, socials);
 
 				div.append(header, info);
+				header.addEventListener("click", () => {
+					console.log('boop');
+					if (info.style.height === "0px" || !info.style.height) {
+						const fullHeight = info.scrollHeight + "px";
+						info.style.height = fullHeight;
+						indicator.textContent = "Λ";
+					} else {
+						info.style.height = "0px";
+						indicator.textContent = "V";
+					}
+				});
 
 				document.getElementById("collaborating-clubs").appendChild(div)
 			});
