@@ -317,8 +317,9 @@ const artistInfo = {
 	normanZhu: {
 		name: "fid",
 		bio: "Hi, I'm .fid, I'm a senior in CSGD and going to be tabling for the first time at slugcon! I'll be selling prints and maybe doing live drawing. See you at slugcon!",
-		artworkCount: 5,
+		artworkCount: 4,
 		socials: {
+			personal: "https://cara.app/fidd",
 			twitter: "https://x.com/theheckisafid"
 		}
 	},
