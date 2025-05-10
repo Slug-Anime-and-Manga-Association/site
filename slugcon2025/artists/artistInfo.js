@@ -415,7 +415,6 @@ const artistInfo = {
 		bio: "Silly crochet plushies and wears by two friends that enjoy crocheting!",
 		artworkCount: 1,
 		socials: {
-			instagram: "https://www.instagram.com/lunardinoshop/"
 		}
 	},
 	kaiZapata: {
@@ -423,7 +422,7 @@ const artistInfo = {
 		bio: "My name is Sophia Chin. I am a 21-year-old artist, game designer, and filmmaker. My primary mediums are oil paint, watercolor, and experimental animation. I create work to tell a story and capture the emotions of an experience. One of my greatest motivations for pursuing art is climate activism. With my climate justice artwork, I aim to harness the inherent power of art to capture attention and evoke emotion, thereby inspiring our communities to take action toward an improved collective future. ",
 		artworkCount: 3,
 		socials: {
-			instagram: "https://www.instagram.com/wy_0w0?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr"
+			instagram: "https://www.instagram.com/lunardinoshop/"
 		}
 	},
 	sophiaChin: {
