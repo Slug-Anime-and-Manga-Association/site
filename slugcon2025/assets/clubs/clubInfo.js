@@ -24,7 +24,7 @@ const clubInfo = {
 	},
 	ss: {
 		name: "SlugSpeak",
-		description: "",
+		description: "A group of students exploring the art of Voice Work through student projects and an abridged series. Open to all levels of experience!",
 		socials: {
 			youtube: "https://www.youtube.com/channel/UCKgDsQnSh0A4eiTIBmPH7qg",
 			instagram: "https://www.instagram.com/slugspeakatucsc/",

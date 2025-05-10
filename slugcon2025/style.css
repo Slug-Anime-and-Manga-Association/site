@@ -2,6 +2,11 @@
 	color: var(--darkAccent);
 }
 
+div.content > h2 {
+ margin-bottom: 0;
+ margin-top: 4rem;
+}
+
 header {
 	height: 130px;
 
@@ -151,6 +156,10 @@ div#collaborating-clubs {
 			transition: height 0.3s ease;
 		}
 	}
+}
+
+object {
+	height: 500px;
 }
 
 @media only screen and (orientation: portrait) {
