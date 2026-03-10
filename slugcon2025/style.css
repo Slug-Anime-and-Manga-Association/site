@@ -216,6 +216,7 @@ div#gallery {
 		align-items: center;
 		flex-wrap: wrap;
 		
+		padding-top: 20px;
 	}
 
 div#gallery > img {
