@@ -224,3 +224,9 @@ div#gallery > img {
 	width: 50%;
 	height:auto;
 }
+
+p#sign-off {
+	text-align: center;
+	font-size: larger;
+	margin-top: 2rem;
+}
