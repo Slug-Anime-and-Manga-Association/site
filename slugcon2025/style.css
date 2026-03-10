@@ -4,7 +4,7 @@
 
 div.content > h2 {
  margin-bottom: 0;
- margin-top: 4rem;
+ margin-top: 2rem;
 }
 
 header {
@@ -44,6 +44,15 @@ img#sakura-mari {
 	width: 70%;
 	height: auto;
 	align-self: center;
+}
+
+img.new {
+	min-width: 0%;
+	width: 70%;
+	height: auto;
+	align-self: center;
+	padding-top: 20px;
+	margin-bottom: 0;
 }
 
 div#merch {
@@ -199,3 +208,16 @@ object {
 		}
 	}
 }
+
+div#gallery {
+		display:flex;
+		align-items: center;
+		flex-wrap: wrap;
+		
+	}
+
+	div#gallery > img {
+		min-width:0;
+		width: 50%;
+		height:auto;
+	}
