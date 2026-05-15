@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<script src="artists/artistInfo.js"></script>
 	<script src="assets/clubs/clubInfo.js"></script>
-	<title>SlugCon 2025 by SAMA</title>
+	<title>SlugCon 2026 by SAMA</title>
 	<meta name="description" content="Slug Anime and Manga Association at UC Santa Cruz">
 </head>
 
@@ -29,13 +29,30 @@
 			<< Back to Home</a>
 				<div id="important">
 					<h2>IMPORTANT IMPORTANT</h2>
-					<!-- <h3>SlugCon 2025 happened on <span class="color">May 11th, 2025</span> from <span class="color">1-7PM</span>
-				at the <span class="color">Merrill Cultural Center</span>,<br>and was attended by 
+					<!-- <h3>SlugCon 2026 happened on <span class="color">May 16th and 17th, 2026</span> from <span class="color">1-6PM</span>
+				at the <span class="color">Merrill Cultural Center + Plaza</span>,<br>and was attended by 
 				<span class="color">1,339 people</span>!</h3> -->
-					<h3>SlugCon 2025 is happening on <span class="color">May 16th AND 17th</span>, from <span
+					<h3>SlugCon 2026 is happening on <span class="color">May 16th AND 17th</span> from <span
 							class="color">1-6PM</span> at the Merrill Cultural Center + Plaza!!</h3>
-					<h3>Join <a href="http://sluganime.org/discord" target="_blank">our Discord server</a> for news and updates on
+					<h3 class="discord">Join <a href="http://sluganime.org/discord" target="_blank">our Discord server</a> for
+						news and updates on
 						future events!!</h3>
+
+					<div class="row socials">
+						<a href="https://www.instagram.com/sluganimeucsc/" target="_blank">
+							<img src="../../content/socials/instagram.avif" />
+						</a>
+						<a href="https://x.com/SlugAnime" target="_blank">
+							<img src="../../content/socials/twitter.avif" />
+						</a>
+						<a href="https://bsky.app/profile/sluganime.bsky.social" target="_blank">
+							<img src="../../content/socials/bluesky.avif" />
+						</a>
+						<a href="http://sluganime.org/discord" target="_blank">
+							<img src="../../content/socials/discord.avif" />
+						</a>
+					</div>
+
 					<i>Last updated: 5/15/2026</i>
 				</div>
 
@@ -57,9 +74,9 @@
 
 				<h2>Matsuri Mari & Merch</h2>
 				<p>Inspired by Snow and Sakura Mikus, our seasonal Mari (SAMA mascot) design contest returned again for SlugCon
-					2026! This year, we held a contest for a Matsuri Mari to be the face of SlugCon 2025! The winner, who was
+					2026! This year, we held a contest for a Matsuri Mari to be the face of SlugCon 2026! The winner, who was
 					voted for in-person at our Winter Art Contest, received all merch featuring their design, guaranteed tabling
-					at SlugCon 2025, and a chance to take a life-sized cutout home!</p>
+					at SlugCon 2026, and a chance to take a life-sized cutout home!</p>
 				<p>Our winner was <span class="color">Brooke</span>!!</p>
 				<img id="matsuri-mari" alt="winning matsuri mari design" src="assets/maris/MATSURII_-_Brooke_Taylor.avif" />
 
@@ -73,9 +90,17 @@
 				<p>Thank you all for participating.</p>
 
 				<div id="merch">
-					<div id="t-shirt">
+					<div>
+						<label id="t-shirt">
+							<input type="radio" name="merch" value="t-shirt" />
+							<img src="./assets/merch_tshirt.avif" alt="slug 2026 t-shirt design" />
+						</label>
 					</div>
-					<div id="hoodie">
+					<div>
+						<label id="hoodie">
+							<input type="radio" name="merch" value="hoodie" checked />
+							<img src="./assets/merch_hoodie.avif" alt="slug 2026 hoodie design" />
+						</label>
 					</div>
 				</div>
 
@@ -101,7 +126,12 @@
 						</h2>
 					</div>
 				</a>
-				<img class="new" alt="two artists smiling at the camera from their booth" src="assets/photos/artist.JPG" />
+
+				<p>We are also proud to announce our first zine! More information to come :)</p>
+				<p>踊る花火と星 / fireworks light up the sky like stars ☆ - a slugcon 2026 artist zine</p>
+				<img src="./assets/FC_x_SAMA_cover.png" alt="zine cover by willow_x0" />
+
+				<!-- <img class="new" alt="two artists smiling at the camera from their booth" src="assets/photos/artist.JPG" /> -->
 				<h2>Collaborating Clubs</h2>
 				<p>Click on any club for more info!</p>
 				<div id="collaborating-clubs"></div>
@@ -156,23 +186,91 @@
 				</script>
 
 				<h2>Itinerary</h2>
-				<h3>OUR EVENTS</h3>
-				<object data="./assets/Schedule 2025.pdf" type="application/pdf">
-					<p>Unable to embed PDF, <a href="./assets/Schedule 2025.pdf">click here to see it</a>!</p>
-				</object>
-				<h3>OUR ACTIVITIES</h3>
-				<object data="./assets/Schedule 2025 - Other.pdf" type="application/pdf">
-					<p>Unable to embed PDF, <a href="./assets/Schedule 2025 - Other.pdf">click here to see it</a>!</p>
-				</object>
+				<div id="itinerary">
+					<h3>OUR EVENTS</h3>
+					<h4>❀˖° DAY ONE °˖❀</h4>
+					<ul>
+						<li><span class="color">[1:00PM - 3:00PM]</span> Maid Cafe — by SAMA ft. Cosplay Club</li>
+						<li><span class="color">[3:00PM - 3:30PM]</span> Intermission</li>
+						<li><span class="color">[3:30PM - 4:00PM]</span> 404 NoSchooL — Musical Performance</li>
+						<li><span class="color">[4:00PM - 5:00PM]</span> The Making of *Crowd Surfers* — by The Game Design
+							& Art Collaboration (GDA)</li>
+						<li><span class="color">[5:00PM - 5:45PM]</span> Light Up The Stage! — by Victoria Chiappetta</li>
+						<li><span class="color">[5:45PM - 6:00PM]</span> Luka Luka☆Night Fever — by hakusmile</li>
+						<li><span class="color">[6:00PM]</span> Closing & Group Photo</li>
+					</ul>
+
+					<h4>❀˖° DAY TWO °˖❀</h4>
+					<ul>
+						<li><span class="color">[1:00PM - 2:00PM]</span> Cosplay Contest — by SAMA x Cosplay Club</li>
+						<li><span class="color">[2:00PM - 3:00PM]</span> "So You Think You Know Anime?" — Trivia Game Show by Jo
+							Lily</li>
+						<li><span class="color">[3:00PM - 3:30PM]</span> Intermission</li>
+						<li><span class="color">[3:30PM - 4:00PM]</span> DREAMØN — Musical Performance</li>
+						<li><span class="color">[4:00PM - 5:00PM]</span> Working in Esports — By Team Liquid</li>
+						<li><span class="color">[5:00PM - 5:30PM]</span> Damned of Eden — Musical Performance</li>
+						<li><span class="color">[5:30PM - 6:00PM]</span> Closing Speech &amp; Group Photo — by Tien Le</li>
+					</ul>
+
+					<h3>OUR ACTIVITIES</h3>
+					<h4>❀˖° DAY ONE °˖❀</h4>
+					<p>CCM</p>
+					<ul>
+						<li><span class="color">[ ALL DAY ]</span> Arcade Corner — Brought to you by SAMA</li>
+						<li><span class="color">[ ALL DAY ]</span> Student Games Playtest + Showcase — Brought to you by SAMA x GDA
+						</li>
+					</ul>
+					<p>Baobab Lounge</p>
+					<ul>
+						<li><span class="color">[ ALL DAY ]</span> Karaoke — Brought to you by SAMA</li>
+					</ul>
+					<p>Fireside Lounge</p>
+					<ul>
+						<li><span class="color">[ 4:00PM - 5:00PM ]</span> "Intro to Gunpla" Workshop — by Kylan Huang</li>
+					</ul>
+					<p>Ming Ong</p>
+					<ul>
+						<li><span class="color">[ 1:00PM - 4:00PM ]</span> Valorant — Hosted by Slug Gaming</li>
+					</ul>
+					<p>Lawn</p>
+					<ul>
+						<li><span class="color">[ ALL DAY ]</span> Foam Fighting — Hosted by Tolaria Belegarth</li>
+					</ul>
+
+					<h4>❀˖° DAY TWO °˖❀</h4>
+					<p>CCM</p>
+					<ul>
+						<li><span class="color">[ ALL DAY ]</span> Arcade Corner — Brought to you by SAMA</li>
+						<li><span class="color">[ ALL DAY ]</span> Student Games Playtest + Showcase — Brought to you by SAMA x GDA
+						</li>
+					</ul>
+					<p>Baobab Lounge</p>
+					<ul>
+						<li><span class="color">[ ALL DAY ]</span> Karaoke — Brought to you by SAMA</li>
+					</ul>
+					<p>Fireside Lounge</p>
+					<ul>
+						<li><span class="color">[ 4:00PM - 5:00PM ]</span> "Roblox Dev. and VFX" Workshop — by tboi</li>
+					</ul>
+					<p>Ming Ong</p>
+					<ul>
+						<li><span class="color">[ 1:00PM - 4:00PM ]</span> League and Tetris — Hosted by Slug Gaming</li>
+					</ul>
+					<p>Lawn</p>
+					<ul>
+						<li><span class="color">[ ALL DAY ]</span> Foam Fighting — Hosted by Tolaria Belegarth</li>
+					</ul>
+				</div>
 
 				<h2>Sponsors</h2>
-				<p>Thank you to all the sponsors for making SlugCon 2025 possible.</p>
-				<object data="./assets/sponsors.pdf" type="application/pdf">
+				<p>Thank you to all the sponsors for making SlugCon 2026 possible.</p>
+				<p>TBD</p>
+				<!-- <object data="./assets/sponsors.pdf" type="application/pdf">
 					<p>Unable to embed PDF, <a href="./assets/sponsors.pdf">click here to see it</a>!</p>
-				</object>
+				</object> -->
 
 				<h2>Convention Planning Board</h2>
-				<p>SlugCon 2025 was planned by an amazing board of student leaders! Thank you all for your hard work!</p>
+				<p>SlugCon 2026 was planned by an amazing board of student leaders! Thank you all for your hard work!</p>
 				<table>
 					<tr>
 						<th>Officers</th>
@@ -180,26 +278,30 @@
 					</tr>
 					<tr>
 						<td>Tien Le (President)</td>
-						<td>Cameron Coleman</td>
+						<td>Chad Santos</td>
 					</tr>
 					<tr>
 						<td>Christian Abady (Vice President)</td>
-						<td>Gustavo Gutierrez</td>
+						<td>Kylan Huang</td>
 					</tr>
 					<tr>
 						<td>Julia Barbera (Treasurer)</td>
-						<td>Harrison Santos</td>
+						<td>Johannes Lily</td>
 					</tr>
 					<tr>
-						<td>Luke "Dev" Devon (Tech Manager)</td>
-						<td>Janice Chi</td>
+						<td>Harry Santos (Event Coordinator)</td>
+						<td>Richa Limaye</td>
+					</tr>
+					<tr>
+						<td>Gustavo Gutierrez (Tech Manager)</td>
+						<td>Logan Montes</td>
 					</tr>
 					<tr>
 						<td>Rani Yeh (Social Media Manager)</td>
 					</tr>
 				</table>
 
-				<h2>Photo Gallery</h2>
+				<!-- <h2>Photo Gallery</h2>
 				<div id="gallery">
 					<img alt="a shot from behind two people playtesting a video game on a monitor" src="assets/photos/gda.JPG" />
 					<img alt="group of strive tournament entrants posing" src="assets/photos/strive.JPG" />
@@ -208,7 +310,7 @@
 						src="assets/photos/maid heart.JPG" />
 					<img alt="two people in cosplay posing with cans of redbull" src="assets/photos/redbull.JPG" />
 					<img alt="group of five people showing off their foam fighting gear" src="assets/photos/foam fighting.JPG" />
-				</div>
+				</div> -->
 
 				<p id="sign-off"><b>Thank you! See you at SlugCon 2026!</b></p>
 	</div>

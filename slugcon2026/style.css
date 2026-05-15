@@ -2,9 +2,9 @@
 	color: var(--darkAccent);
 }
 
-div.content > h2 {
- margin-bottom: 0;
- margin-top: 2rem;
+div.content>h2 {
+	margin-bottom: 0;
+	margin-top: 2rem;
 }
 
 header {
@@ -18,7 +18,7 @@ header {
 	}
 
 	img#slugcon-logo {
-		width:300px;
+		width: 300px;
 		padding-left: 15px;
 		padding-top: 20px;
 	}
@@ -34,6 +34,13 @@ div#important {
 	border: 5px solid var(--darkAccent);
 	border-radius: 5px;
 	text-align: center;
+
+	.socials img {
+		height: 50px;
+		min-width: 0%;
+		width: auto;
+		margin-right: 10px;
+	}
 }
 
 div.content {
@@ -68,7 +75,7 @@ div#merch {
 	}
 
 	img {
-		min-width: 377px;
+		min-width: 800px;
 	}
 
 	&>div {
@@ -81,33 +88,19 @@ div#merch {
 		transition-duration: 0.5s;
 
 		&:has(input:checked) {
-			width: 80%;
+			width: 800px;
 			filter: brightness(1);
 
 			label {
-				margin-left: -15px;
+				margin-left: 0 !important;
 			}
-
-			p {
-				display: block;
-			}
-		}
-
-		p {
-			display: none;
-			margin-left: 1.5rem;
-			white-space: nowrap;
-			position: absolute;
-			bottom: 0;
-			color: #fff;
-			pointer-events: none;
 		}
 
 		label {
 			height: 100%;
 			display: flex;
 			flex-direction: row;
-			margin-left: -150px;
+			margin-left: -621px;
 			transition-duration: 0.5s;
 		}
 	}
@@ -169,6 +162,21 @@ div#collaborating-clubs {
 	}
 }
 
+div#itinerary {
+	h4 {
+		margin-bottom: 0;
+	}
+
+	ul,
+	p {
+		margin: 0;
+	}
+
+	li::marker {
+		content: "❀ ";
+	}
+}
+
 object {
 	height: 500px;
 }
@@ -190,39 +198,31 @@ object {
 		height: 200px;
 
 		img {
-			min-width: 160px;
+			min-width: 355px;
 		}
 
-		p {
-			margin-left: 7px !important;
-			font-size: small;
-		}
-		span {
-			display: block;
-		}
-
-		&>div:has(input:checked) label {
-			margin-left: -10px !important;
+		&>div:has(input:checked) {
+			width: 355px !important;
 		}
 
 		label {
-			margin-left: -65px !important;
+			margin-left: -278px !important;
 		}
 	}
 }
 
 div#gallery {
-		display:flex;
-		align-items: center;
-		flex-wrap: wrap;
-		
-		padding-top: 20px;
-	}
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
 
-div#gallery > img {
-	min-width:0;
+	padding-top: 20px;
+}
+
+div#gallery>img {
+	min-width: 0;
 	width: 50%;
-	height:auto;
+	height: auto;
 }
 
 p#sign-off {
