@@ -55,6 +55,67 @@ const artistInfo = {
 			bluesky: "https://bsky.app/profile/oatvercast.bsky.social",
 		},
 	},
+	oiya: {
+		name: "Oiya / Chickenpoiya",
+		bio:
+			"I'm Oiya!! This will be my 4th slugcon, and I'm very excited to be tabling both days! I look forward to sharing my art at this event every year and getting to talk with other slugs who share my interests :)",
+		artworkCount: 6,
+		socials: {},
+	},
+	avante: {
+		name: "AvanteInkling",
+		bio:
+			"Hello! I'm Madison, an alumni who graduated in 2025. I'm a hobbyist artist who loves to draw my OCs, and I'm also a huge fan of Vocaloid and RPGMaker! Feel free to chat with me about anything!",
+		artworkCount: 5,
+		socials: {
+			bluesky: "https://bsky.app/profile/avanteinkling.bsky.social",
+		},
+	},
+	lux: {
+		name: "@blittergots",
+		bio:
+		`Hi! I'm Lux Morgan. I like to play and draw :) 
+		I'm a generalist artist and game designer with a love for color, texture, and character design. I love creatures and robots and goobers of any variety more than anything else. I'm so happy to be a part of SlugCon this year, and I'm looking forward to seeing you there! (Oh, and if you're interested, commissions are open!)`,
+		artworkCount: 5,
+		socials: {
+			bluesky: "https://bsky.app/profile/blittergots.bsky.social",
+			tumblr: "https://www.tumblr.com/blittergots",
+			instagram: "https://www.instagram.com/blittergots",
+		},
+	},
+	potatodog: {
+		name: "potato dog studio",
+		bio: "Hi everyone! My name is Gillian, and I'm the artist behind potato dog studio. It's been awhile since I've been to SlugCon, and I'm excited to come back and see everyone again. In my spare time, I like making art + comics of my mascot potato dog, along with drawing anime fan art—some examples include Frieren and Bocchi the Rock. I will also be selling some novelty items this time such as UCSC and Year of the Horse-themed post cards. Looking forward to seeing everyone again!",
+		artworkCount: 2,
+		socials: {
+			instagram: "https://www.instagram.com/potatodogstudio/",
+bluesky: "https://bsky.app/profile/potatodogstudio.bsky.social",
+		},
+	},
+	starlotties: {
+		name: "starlotties",
+		bio: "I'm starlotties! I'm really into Vocaloid and Utaite!! I hope to spread joy with my art :D",
+		artworkCount: 6,
+		socials: {
+			personal: "https://starlotties.carrd.co/",
+			twitter: "https://twitter.com/starlotties",
+			instagram: "https://www.instagram.com/starlotties_/",
+			tumblr: "http://starlotties.tumblr.com/",
+			youtube: "https://m.youtube.com/channel/UClPg6A7kWHEADpe8_hiiPGQ",
+		},
+	},
+	rowan: {
+		name: "RowanDownAStream",
+		bio: 
+		`Hi, I am Rowan. I have been drawing a lot since middle school and a big video game fan, my favorite being The Legend of Zelda series. Currently drawing a lot of my Warrior of Light from FFXIV. 
+		I am most active on blue sky: <a href="https://bsky.app/profile/rowandownastream.bsky.social" target="_blank">https://bsky.app/profile/rowandownastream.bsky.social</a>
+		I also sell my wares on Etsy: <a href="https://rowandownastream.etsy.com" target="_blank">https://rowandownastream.etsy.com</a>`,
+		artworkCount: 6,
+		socials: {
+			personal: "https://rowandownastream.etsy.com",
+			bluesky: "https://bsky.app/profile/rowandownastream.bsky.social",
+		},
+	},
 	// name: {
 	// 	name: "",
 	// 	bio: "",

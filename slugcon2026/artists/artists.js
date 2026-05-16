@@ -63,11 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // generates array of artist artwork filenames
 function generateArray(artistID, artworkCount) {
 	return [...Array(artworkCount).keys()].map((i) => {
-		return `artistWorks/${artistID}_${i.toString().padStart(2, "0")}.${
-			["erikaStewart", "appleSketch"].includes(artistID) && i == 0
-				? "gif"
-				: imageFormat
-		}`;
+		return `artistWorks/${artistID}_${i.toString().padStart(2, "0")}.${imageFormat}`;
 	});
 }
 
@@ -97,7 +93,7 @@ function openDetailedView(artist) {
 
 	document.querySelector("#artist-info .name").innerText =
 		artistInfo[artist].name;
-	document.querySelector("#artist-info .bio").innerText =
+	document.querySelector("#artist-info .bio").innerHTML = // innerHTML instead of innerText cuz someone included links in bio
 		artistInfo[artist].bio;
 	document.querySelector("#artist-info .pfp").src =
 		`./artistPfps/${artist}.${imageFormat}`;
