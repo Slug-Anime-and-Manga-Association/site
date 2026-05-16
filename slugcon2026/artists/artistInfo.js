@@ -1,6 +1,6 @@
 // why is this not a .json? fetch() is too much work
 const artistInfo = {
-	janchi: {
+	janchii: {
 		name: "jam.chii_",
 		bio: "",
 		artworkCount: 3,
