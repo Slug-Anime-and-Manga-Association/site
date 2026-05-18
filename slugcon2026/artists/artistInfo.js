@@ -74,7 +74,7 @@ const artistInfo = {
 	lux: {
 		name: "blittergots",
 		bio: `Hi! I'm Lux Morgan. I like to play and draw :) 
-		I'm a generalist artist and game designer with a love for color, texture, and character design. I love creatures and robots and goobers of any variety more than anything else. I'm so happy to be a part of SlugCon this year, and I'm looking forward to seeing you there! (Oh, and if you're interested, commissions are open!)`,
+I'm a generalist artist and game designer with a love for color, texture, and character design. I love creatures and robots and goobers of any variety more than anything else. I'm so happy to be a part of SlugCon this year, and I'm looking forward to seeing you there! (Oh, and if you're interested, commissions are open!)`,
 		artworkCount: 5,
 		socials: {
 			bluesky: "https://bsky.app/profile/blittergots.bsky.social",
@@ -109,8 +109,8 @@ const artistInfo = {
 		name: "RowanDownAStream",
 		bio:
 			`Hi, I am Rowan. I have been drawing a lot since middle school and a big video game fan, my favorite being The Legend of Zelda series. Currently drawing a lot of my Warrior of Light from FFXIV. 
-		I am most active on blue sky: <a href="https://bsky.app/profile/rowandownastream.bsky.social" target="_blank">https://bsky.app/profile/rowandownastream.bsky.social</a>
-		I also sell my wares on Etsy: <a href="https://rowandownastream.etsy.com" target="_blank">https://rowandownastream.etsy.com</a>`,
+I am most active on blue sky: <a href="https://bsky.app/profile/rowandownastream.bsky.social" target="_blank">https://bsky.app/profile/rowandownastream.bsky.social</a>
+I also sell my wares on Etsy: <a href="https://rowandownastream.etsy.com" target="_blank">https://rowandownastream.etsy.com</a>`,
 		artworkCount: 6,
 		socials: {
 			personal: "https://rowandownastream.etsy.com",
@@ -121,7 +121,7 @@ const artistInfo = {
 		name: "Parade Animals",
 		bio:
 			"Hello I'm Ari I'm an oc and fan-artist and I like Fern Frieren and Warrior cats and Cammy Street Fighter!!",
-		artworkCount: 10,
+		artworkCount: 9,
 		socials: {
 			instagram: "https://instagram.com/parade.animals",
 		},
@@ -235,7 +235,8 @@ I’ll be bringing a variety of merch including prints, charms, and photocards�
 	},
 	henn: {
 		name: "Astro Hen",
-		bio: "hi! I’m hen, an astrophysics student who mostly draws fanart and/or original artworks of my persona.",
+		bio:
+			"hi! I’m hen, an astrophysics student who mostly draws fanart and/or original artworks of my persona.",
 		artworkCount: 8,
 		socials: {},
 	},
@@ -247,15 +248,18 @@ I’ll be bringing a variety of merch including prints, charms, and photocards�
 	},
 	syllin: {
 		name: "Syllin Xiloscient (@silly.syllin.arts)",
-		bio: "Hello, I'm a third-year AGPM student! I love Twisted Wonderland and Genshin Impact, but I like plenty of other things (like Black Butler). My favorite characters are Malleus Draconia and Neuvillette. Sorry I don't have a lot of products to show; I'm still trying to make more stuff as I haven't sold my work much before. I hope you enjoy my art, at least!",
+		bio:
+			"Hello, I'm a third-year AGPM student! I love Twisted Wonderland and Genshin Impact, but I like plenty of other things (like Black Butler). My favorite characters are Malleus Draconia and Neuvillette. Sorry I don't have a lot of products to show; I'm still trying to make more stuff as I haven't sold my work much before. I hope you enjoy my art, at least!",
 		artworkCount: 3,
 		socials: {
-			instagram: "https://www.instagram.com/silly.syllin.arts?igsh=MzRlODBiNWFlZA==",
+			instagram:
+				"https://www.instagram.com/silly.syllin.arts?igsh=MzRlODBiNWFlZA==",
 		},
 	},
 	isabelldexigns: {
 		name: "isabelldexigns",
-		bio: "Hi hi, my name is Audrey and I am a jewelry designer and artist. I am a second year FDM and AGPM student. I am the founder of the small jewelry business, isabelldexigns. I love to create work that reflects who I am, and am so excited to share it with all of you!! :)",
+		bio:
+			"Hi hi, my name is Audrey and I am a jewelry designer and artist. I am a second year FDM and AGPM student. I am the founder of the small jewelry business, isabelldexigns. I love to create work that reflects who I am, and am so excited to share it with all of you!! :)",
 		artworkCount: 1,
 		socials: {
 			instagram: "https://www.instagram.com/Isabelldexigns/",
@@ -263,28 +267,167 @@ I’ll be bringing a variety of merch including prints, charms, and photocards�
 	},
 	luke: {
 		name: "lukremium",
-		bio: "hi!! :D i'm luke and i love homestuck and sonic!! im still a newbie when it comes to artist alley, but i'm excited to meet everyone! i got hella sonic merch.... HELLA",
-		artworkCount: 0,
+		bio:
+			"hi!! :D i'm luke and i love homestuck and sonic!! im still a newbie when it comes to artist alley, but i'm excited to meet everyone! i got hella sonic merch.... HELLA",
+		artworkCount: 9,
 		socials: {
 			instagram: "https://www.instagram.com/lukremium/",
 			twitter: "https://x.com/lukremium",
 		},
 	},
-	// name: {
-	// 	name: "",
-	// 	bio: "",
-	// 	artworkCount: 0,
-	// 	socials: {},
-	// },
-	// cabij: {
-	// 	name: "phantomCabij",
-	// 	bio:
-	// 		"I'm Marlo/Cabij, digital and traditional artist who loves making little fandom trinkets! I'm a 4th year astrophysics major, art is mainly my hobby but I like to share what I make with others and hopefully they'll like my trinkets and pngs as much as I do!!",
-	// 	artworkCount: 0,
-	// 	socials: {
-	// 		tumblr: "https://www.tumblr.com/blog/phantomcabij",
-	// 		bluesky: "https://bsky.app/profile/phantomcabij.bsky.social",
-	// 		twitter: "https://x.com/phantomCabij",
-	// 	},
-	// },
+	sockwearer: {
+		name: "sockwearer",
+		bio:
+			"i'm jesse! i make weird stories, ocs, and fanart stuff. i'm a biology major but i like to make time for art where i can because it's really important to me. thanks for appreciating my work!",
+		artworkCount: 6,
+		socials: {},
+	},
+	snek: {
+		name: "Snek",
+		bio:
+			"Hello~ I'm a UCSC alumni that do mostly illustrations of characters from Type-Moon",
+		artworkCount: 5,
+		socials: {},
+	},
+	mzbljack: {
+		name: "mzbljack",
+		bio:
+			"hello, am jack and exists sometimes. much like triangles and clicking buttons. :]",
+		artworkCount: 5,
+		socials: {
+			instagram: "https://www.instagram.com/mzbljack/",
+			bluesky: "https://bsky.app/profile/mzbljack.bsky.social",
+		},
+	},
+	noname: {
+		name: "noname",
+		bio:
+			"I'm Jaxon, in the past I've mainly done pen on paper drawings, but am trying to experiment more with digital illustration and other stuffs. I generally have too scattered interests which aren't always printable, but I enjoy visual arts when I get around to them :D",
+		artworkCount: 7,
+		socials: {
+			instagram: "https://www.instagram.com/NonNamed.Art/",
+		},
+	},
+	seefu: {
+		name: "Dragonseefu",
+		bio:
+			"Hi! I’m Seefu and I’m a digital illustrator based in Bay Area. I love to draw fanart (especially for the Creepypasta, Twisted Wonderland, and Honkai Star Rail fandoms) as well as original art and characters. My main oc is my alien lizard, Sifu!",
+		artworkCount: 8,
+		socials: {
+			instagram:
+				"https://www.instagram.com/dragonseefu?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr",
+		},
+	},
+	sevalopod: {
+		name: "sevalopod",
+		bio: `hello!
+my name is sev, i'm a third year MCD bio major, and i love to draw! i like games like zzz, genshin, dmmd, and others :-)`,
+		artworkCount: 8,
+		socials: {
+			instagram: "https://www.instagram.com/ihearttoxicyaoi/",
+		},
+	},
+	pits: {
+		name: "Puppy in the Stars",
+		bio:
+			"Puppy in the Stars is a space meant to feature cute critters that remind you of kinder times. I create mostly original art showcasing animals like dogs and cats with a dreamcore vibe and a few fanart pieces sprinkled in. ♡ Life can be hard, but it's a little less difficult when you have cute creatures by your side! ♡",
+		artworkCount: 0,
+		socials: {
+			instagram:
+				"https://www.instagram.com/puppyinthestars?igsh=MzRlODBiNWFlZA==",
+		},
+	},
+	princeofcacti: {
+		name: "princeofcacti",
+		bio:
+			"My name is Peter, I am a trans mexican artist based out of Watsonville and have been drawing for most of my life, I love collecting art and attending art events as much as I love making my own art, getting to participate in local artist events is super meaningful. ",
+		artworkCount: 7,
+		socials: {
+			personal: "https://princeofcacti.carrd.co",
+			instagram: "https://www.instagram.com/princeofcacti",
+			youtube: "https://www.youtube.com/@princeofcacti",
+		},
+	},
+	cabij: {
+		name: "phantomCabij",
+		bio:
+			"I'm Marlo/Cabij, digital and traditional artist who loves making little fandom trinkets! I'm a 4th year astrophysics major, art is mainly my hobby but I like to share what I make with others and hopefully they'll like my trinkets and pngs as much as I do!!",
+		artworkCount: 11,
+		socials: {
+			tumblr: "https://www.tumblr.com/blog/phantomcabij",
+			bluesky: "https://bsky.app/profile/phantomcabij.bsky.social",
+			twitter: "https://x.com/phantomCabij",
+		},
+	},
+	rani: {
+		name: "PexeLukive",
+		bio:
+			"Hello! I'm Rani (they/them), a fourth year AGPM major and SAMA's Social Media Coordinator! I make stickers, prints, pins/keychains, and more of various anime/games/media including Another Eden (my all time favorite game, please yap with me about it if you play it/want to know more about it), Project Sekai, and Genshin Impact!",
+		artworkCount: 10,
+		socials: {
+			personal: "https://linktr.ee/pexelukive",
+			twitter: "https://x.com/PexeLukive",
+			bluesky: "https://bsky.app/profile/pexelukive.bsky.social",
+		},
+	},
+	brooke: {
+		name: "willow_x0",
+		bio:
+			"Hi there! I go by Brooke (or Willow on socials), I’m a 4th year Art & AGPM major with a focus on creating fan illustrations for the media I enjoy. I’ve got lots of prints & other trinkets for a variety of fandoms, please feel free to stop by if something catches your eye ! ♡⸜(｡˃ ᵕ ˂ )⸝",
+		artworkCount: 10,
+		socials: {},
+	},
+	azumi: {
+		name: "azureazumi",
+		bio:
+			"Hello! I’m Azumi (she/they). I started drawing traditionally about 7 years ago before fully switching to digital in the past 5 years. I love playing around with distinct, directional mood-lighting, with an emphasis on warm-toned colors such as oranges, yellows, and pinks. Apart from making original content with my DND characters, I am also currently engaged in fandoms such as TADC, Persona, Hazbin Hotel, and Minecraft Youtube — and make fanart (full pieces and animatics) based off of songs or other ideas floating around in my head. ",
+		artworkCount: 10,
+		socials: {
+			instagram:
+				"https://www.instagram.com/azureazumii?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr",
+		},
+	},
+	lazuli: {
+		name: "sion_lazuli",
+		bio:
+			`Hobby artist, mainly doodling OCs with occasional fanart. 2021 UCSC Biology alumni. Very very tired.
+
+Main interests are Vocaloid/FF14/Limbus Company`,
+		artworkCount: 5,
+		socials: {
+			instagram: "https://www.instagram.com/sigma_sion/",
+			twitter: "https://twitter.com/sion_lazuli",
+			bluesky: "https://bsky.app/profile/sionlazuli.bsky.social",
+		},
+	},
+	fishwizard: {
+		name: "Fish Wizard",
+		bio: "I am the Fish Wizard. I craft so much stuff that it’s too much for me to keep for myself. I love collaging and making kandi. Art and creation is  how I express myself and I adore sharing those rich emotions with others.",
+		artworkCount: 10,
+		socials: {
+			instagram: "https://www.instagram.com/fishwizard0_0/",
+		},
+	},
+	daglona: {
+		name: "dalgona.clip",
+		bio: "Hello hello!!! I'm June, or dalgona.clip on Instagram! I'm a student illustrator attending UCSC and I'm a big fan of Undertale and Deltarune (if it wasn't already obvious from my catalog LOL), as well as a handful of other indie games and Pokemon! Outer Wilds has been a recent favorite of mine-- please please come talk to me about it :^D Thanks for stopping by and taking a peek at my work!",
+		artworkCount: 4,
+		socials: {
+			instagram: "https://www.instagram.com/dalgona.clip/",
+		},
+	},
+	papajon: {
+		name: "papajon546",
+		bio: "",
+		artworkCount: 9,
+		socials: {},
+	},
+	marisa: {
+		name: "Marisa Wong",
+		bio: "Come playtest our game: Hyper Rush!",
+		artworkCount: 3,
+		socials: {
+			personal: "https://sites.google.com/view/wwyee/home",
+		},
+	},
 };
