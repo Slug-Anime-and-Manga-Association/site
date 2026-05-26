@@ -7,8 +7,8 @@
 	<link rel="icon" href="../favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="../styles.css" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
-	<script src="artists/artistInfo.js"></script>
-	<script src="assets/clubs/clubInfo.js"></script>
+	<script defer src="artists/artistInfo.js"></script>
+	<script defer src="assets/clubs/clubInfo.js"></script>
 	<title>SlugCon 2026 by SAMA</title>
 	<meta name="description" content="Slug Anime and Manga Association at UC Santa Cruz">
 </head>
@@ -16,10 +16,10 @@
 <body>
 	<header>
 		<div class="mari">
-			<img src="../content/Mari.gif" alt="Mari">
+			<img src="../content/Mari.gif" alt="Mari" width="96" height="96">
 		</div>
 		<div class="title">
-			<img id="slugcon-logo" src="assets/SlugCon_Logo_2026.avif" alt="SlugCon 2026 Logo" />
+			<img id="slugcon-logo" src="assets/SlugCon_Logo_2026.avif" alt="SlugCon 2026 Logo" width="300" height="169" />
 			<p>Fish presents SlugCon 2026 𓆝 𓆟 𓆞 𓆝</p>
 		</div>
 	</header>
@@ -39,17 +39,17 @@
 						future events!!</h3>
 
 					<div class="row socials">
-						<a href="https://www.instagram.com/sluganimeucsc/" target="_blank">
-							<img src="../../content/socials/instagram.avif" />
+						<a href="https://www.instagram.com/sluganimeucsc/" target="_blank" rel="noreferrer">
+							<img src="../../content/socials/instagram.avif" alt="Instagram" loading="lazy" decoding="async" />
 						</a>
-						<a href="https://x.com/SlugAnime" target="_blank">
-							<img src="../../content/socials/twitter.avif" />
+						<a href="https://x.com/SlugAnime" target="_blank" rel="noreferrer">
+							<img src="../../content/socials/twitter.avif" alt="Twitter" loading="lazy" decoding="async" />
 						</a>
-						<a href="https://bsky.app/profile/sluganime.bsky.social" target="_blank">
-							<img src="../../content/socials/bluesky.avif" />
+						<a href="https://bsky.app/profile/sluganime.bsky.social" target="_blank" rel="noreferrer">
+							<img src="../../content/socials/bluesky.avif" alt="Bluesky" loading="lazy" decoding="async" />
 						</a>
-						<a href="http://sluganime.org/discord" target="_blank">
-							<img src="../../content/socials/discord.avif" />
+						<a href="http://sluganime.org/discord" target="_blank" rel="noreferrer">
+							<img src="../../content/socials/discord.avif" alt="Discord" loading="lazy" decoding="async" />
 						</a>
 					</div>
 
@@ -78,7 +78,7 @@
 					voted for in-person at our Winter Art Contest, received all merch featuring their design, guaranteed tabling
 					at SlugCon 2026, and a chance to take a life-sized cutout home!</p>
 				<p>Our winner was <span class="color">Brooke</span>!!</p>
-				<img id="matsuri-mari" alt="winning matsuri mari design" src="assets/maris/MATSURII_-_Brooke_Taylor.avif" />
+				<img id="matsuri-mari" alt="winning matsuri mari design" src="assets/maris/MATSURII_-_Brooke_Taylor.avif" loading="lazy" decoding="async" />
 
 				<p>Here's a collection of all of the other designs submitted this year!</p>
 
@@ -93,13 +93,13 @@
 					<div>
 						<label id="t-shirt">
 							<input type="radio" name="merch" value="t-shirt" />
-							<img src="./assets/merch_tshirt.avif" alt="slug 2026 t-shirt design" />
+							<img src="./assets/merch_tshirt.avif" alt="slug 2026 t-shirt design" loading="lazy" decoding="async" />
 						</label>
 					</div>
 					<div>
 						<label id="hoodie">
 							<input type="radio" name="merch" value="hoodie" checked />
-							<img src="./assets/merch_hoodie.avif" alt="slug 2026 hoodie design" />
+							<img src="./assets/merch_hoodie.avif" alt="slug 2026 hoodie design" loading="lazy" decoding="async" />
 						</label>
 					</div>
 				</div>
@@ -129,7 +129,7 @@
 
 				<p>We are also proud to announce our first zine! More information to come :)</p>
 				<p>踊る花火と星 / fireworks light up the sky like stars ☆ - a slugcon 2026 artist zine</p>
-				<img src="./assets/FC_x_SAMA_cover.png" alt="zine cover by willow_x0" />
+				<img src="./assets/FC_x_SAMA_cover.png" alt="zine cover by willow_x0" loading="lazy" decoding="async" />
 
 				<!-- <img class="new" alt="two artists smiling at the camera from their booth" src="assets/photos/artist.JPG" /> -->
 				<h2>Collaborating Clubs</h2>
@@ -170,7 +170,6 @@
 
 						div.append(header, info);
 						header.addEventListener("click", () => {
-							console.log('boop');
 							if (info.style.height === "0px" || !info.style.height) {
 								const fullHeight = info.scrollHeight + "px";
 								info.style.height = fullHeight;
@@ -269,6 +268,23 @@
 					<p>Unable to embed PDF, <a href="./assets/sponsors.pdf">click here to see it</a>!</p>
 				</object>
 
+				<h2>Scenes From SlugCon</h2>
+				<p>A few moments from the weekend: performances, cosplay, and the community that made it happen.</p>
+				<div id="gallery">
+					<figure class="gallery-card gallery-wide">
+						<img alt="large group photo from SlugCon 2026 in the Merrill Cultural Center" src="assets/photos/group-photo.webp" loading="lazy" decoding="async" />
+					</figure>
+					<figure class="gallery-card">
+						<img alt="maid cafe participants posing together indoors" src="assets/photos/maid-cafe-group.webp" loading="lazy" decoding="async" />
+					</figure>
+					<figure class="gallery-card">
+						<img alt="audience members in cosplay watching an event together" src="assets/photos/cosplay-audience.webp" loading="lazy" decoding="async" />
+					</figure>
+					<figure class="gallery-card">
+						<img alt="speaker presenting on stage during a SlugCon panel" src="assets/photos/panel-presentation.webp" loading="lazy" decoding="async" />
+					</figure>
+				</div>
+
 				<h2>Convention Planning Board</h2>
 				<p>SlugCon 2026 was planned by an amazing board of student leaders! Thank you all for your hard work!</p>
 				<table>
@@ -301,23 +317,12 @@
 					</tr>
 				</table>
 
-				<!-- <h2>Photo Gallery</h2>
-				<div id="gallery">
-					<img alt="a shot from behind two people playtesting a video game on a monitor" src="assets/photos/gda.JPG" />
-					<img alt="group of strive tournament entrants posing" src="assets/photos/strive.JPG" />
-					<img alt="shot of two people shopping at an artist's booth" src="assets/photos/artist alley.JPG" />
-					<img alt="two people in maid costumes forming a heart with their hands in the convention center"
-						src="assets/photos/maid heart.JPG" />
-					<img alt="two people in cosplay posing with cans of redbull" src="assets/photos/redbull.JPG" />
-					<img alt="group of five people showing off their foam fighting gear" src="assets/photos/foam fighting.JPG" />
-				</div> -->
-
 				<p id="sign-off"><b>Thank you! See you at SlugCon 2026!</b></p>
 	</div>
 
 	<footer>
 		<div>
-			<img src="../content/slugheart.png" alt="Slug Heart">
+			<img src="../content/slugheart.png" alt="Slug Heart" width="69" height="69" loading="lazy" decoding="async">
 		</div>
 		<div>
 			<p>Inquiries? Contact <a href="mailto:sluganime@ucsc.edu">sluganime@ucsc.edu</a></p>
