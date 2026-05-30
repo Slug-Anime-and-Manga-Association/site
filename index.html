@@ -177,9 +177,12 @@
             const photoSlices = Array.from(document.querySelectorAll("[data-photo-slice]"));
             const photoSlicesContainer = document.getElementById("photo-slices");
             const mobileMedia = window.matchMedia("(max-width: 768px)");
+            const root = document.documentElement;
             let activePhotoIndex = 0;
             let photoIntervalId = null;
-            let photoObserver = null;
+            let mobileScrollAttached = false;
+            let parallaxTicking = false;
+            let mobileGalleryTicking = false;
 
             function setActivePhoto(index) {
                 activePhotoIndex = index;
@@ -192,6 +195,30 @@
                 if (photoIntervalId) {
                     window.clearInterval(photoIntervalId);
                     photoIntervalId = null;
+                }
+            }
+
+            function updateMobileGallery() {
+                mobileGalleryTicking = false;
+                if (!mobileMedia.matches || photoSlices.length === 0) {
+                    return;
+                }
+
+                const rect = photoSlicesContainer.getBoundingClientRect();
+                const viewportAnchor = window.innerHeight * 0.45;
+                const travel = Math.max(rect.height + window.innerHeight * 0.2, 1);
+                const progress = Math.min(Math.max((viewportAnchor - rect.top) / travel, 0), 0.9999);
+                const nextIndex = Math.min(Math.floor(progress * photoSlices.length), photoSlices.length - 1);
+
+                if (nextIndex !== activePhotoIndex) {
+                    setActivePhoto(nextIndex);
+                }
+            }
+
+            function requestMobileGalleryUpdate() {
+                if (!mobileGalleryTicking) {
+                    mobileGalleryTicking = true;
+                    window.requestAnimationFrame(updateMobileGallery);
                 }
             }
 
@@ -225,52 +252,39 @@
             photoSlicesContainer.addEventListener("mouseleave", startPhotoRotation);
 
             function updateTreeParallax() {
+                parallaxTicking = false;
                 if (prefersReducedMotion) {
-                    document.documentElement.style.setProperty("--treeTrunkOffset", "0px");
-                    document.documentElement.style.setProperty("--treeTopOffset", "0px");
-                    document.documentElement.style.setProperty("--treeMiddleOffset", "0px");
-                    document.documentElement.style.setProperty("--treeBottomOffset", "0px");
+                    root.style.setProperty("--treeTrunkOffset", "0px");
+                    root.style.setProperty("--treeTopOffset", "0px");
+                    root.style.setProperty("--treeMiddleOffset", "0px");
+                    root.style.setProperty("--treeBottomOffset", "0px");
                     return;
                 }
 
-                const maxScroll = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
+                const maxScroll = Math.max(root.scrollHeight - window.innerHeight, 1);
                 const progress = Math.min(window.scrollY / maxScroll, 1);
-                document.documentElement.style.setProperty("--treeTrunkOffset", `${progress * 18}px`);
-                document.documentElement.style.setProperty("--treeTopOffset", `${progress * 34}px`);
-                document.documentElement.style.setProperty("--treeMiddleOffset", `${progress * 52}px`);
-                document.documentElement.style.setProperty("--treeBottomOffset", `${progress * 70}px`);
+                root.style.setProperty("--treeTrunkOffset", `${progress * 18}px`);
+                root.style.setProperty("--treeTopOffset", `${progress * 34}px`);
+                root.style.setProperty("--treeMiddleOffset", `${progress * 52}px`);
+                root.style.setProperty("--treeBottomOffset", `${progress * 70}px`);
             }
 
-            function destroyPhotoObserver() {
-                if (photoObserver) {
-                    photoObserver.disconnect();
-                    photoObserver = null;
+            function requestParallaxUpdate() {
+                if (!parallaxTicking) {
+                    parallaxTicking = true;
+                    window.requestAnimationFrame(updateTreeParallax);
                 }
             }
 
             function syncPhotoMode() {
-                destroyPhotoObserver();
                 if (mobileMedia.matches) {
                     stopPhotoRotation();
-                    photoObserver = new IntersectionObserver((entries) => {
-                        const visibleEntries = entries
-                            .filter((entry) => entry.isIntersecting)
-                            .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
-
-                        if (visibleEntries.length > 0) {
-                            const nextIndex = photoSlices.indexOf(visibleEntries[0].target);
-                            if (nextIndex >= 0) {
-                                setActivePhoto(nextIndex);
-                            }
-                        }
-                    }, {
-                        threshold: [0.2, 0.4, 0.6, 0.8],
-                        rootMargin: "-18% 0px -18% 0px"
-                    });
-
-                    photoSlices.forEach((slice) => {
-                        photoObserver.observe(slice);
-                    });
+                    if (!mobileScrollAttached) {
+                        window.addEventListener("scroll", requestMobileGalleryUpdate, { passive: true });
+                        window.addEventListener("resize", requestMobileGalleryUpdate, { passive: true });
+                        mobileScrollAttached = true;
+                    }
+                    requestMobileGalleryUpdate();
                     return;
                 }
 
@@ -279,9 +293,10 @@
 
             setActivePhoto(0);
             syncPhotoMode();
-            updateTreeParallax();
+            requestParallaxUpdate();
             mobileMedia.addEventListener("change", syncPhotoMode);
-            window.addEventListener("scroll", updateTreeParallax, { passive: true });
+            window.addEventListener("scroll", requestParallaxUpdate, { passive: true });
+            window.addEventListener("resize", requestParallaxUpdate, { passive: true });
         </script>
     </main>
     <footer>
