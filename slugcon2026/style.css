@@ -9,6 +9,7 @@ div.content>h2 {
 
 header {
 	min-height: 210px;
+	position: relative;
 
 	.title {
 		display: flex;
